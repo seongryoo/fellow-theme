@@ -1,16 +1,16 @@
 <?php
 
 $member_obj = false;
-$member_username = get_query_var('member');
+$member_slug = get_query_var('member');
 
-if ($member_username != '') {
-    $member_obj = get_user_by('slug', $member_username);
+if ($member_slug != '') {
+    $member_obj = get_user_by('slug', $member_slug);
 }
 
 ?>
 
 <?php if ($member_obj == false): ?>
-    <h1>Looks like this member doesn't exist. :(</h1>
+    <h1>Looks like this member (<?php echo $member_slug ?>) doesn't exist. :(</h1>
 
 <?php else:
     $member_name = $member_obj->display_name;

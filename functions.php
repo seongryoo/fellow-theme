@@ -14,7 +14,7 @@ function add_author_rules()
 {
     add_rewrite_rule(
         'member/([^/]+)/?$',
-        'index.php?pagename=profile&member=$matches[1]',
+        'index.php?pagename=member-profile&member=$matches[1]',
         'top'
     );
 
