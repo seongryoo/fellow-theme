@@ -13,7 +13,7 @@ add_action('init', 'add_author_rules');
 function add_author_rules()
 {
     add_rewrite_rule(
-        'member/([^/]+)/?$',
+        'app/member/([^/]+)/?$',
         'index.php?pagename=member-profile&member=$matches[1]',
         'top'
     );
