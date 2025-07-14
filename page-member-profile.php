@@ -24,7 +24,7 @@ get_header(null, array('in_app' => true, 'title_override' => $title_override));
     <h1>Looks like this member (<?php echo $member_slug ?>) doesn't exist. :(</h1>
 
 <?php else: ?>
-    <h1>Member: <?php echo $member_name ?></h1>
+    <h1>Member: <?php echo $member_obj->display_name ?></h1>
 
 <?php endif; 
 
