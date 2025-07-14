@@ -2,7 +2,7 @@
 
 get_header(null, array('in_app' => true));
 
-get_template_part('parts/app-side-nav', null, array('highlighted' => 'offers'));
+get_template_part('parts/app-side-nav', null, array('highlighted' => 'home'));
 
 if (have_posts()):
     while (have_posts()):
@@ -38,3 +38,4 @@ if (have_posts()):
 get_template_part('parts/app-side-nav-end');
 
 get_footer();
+

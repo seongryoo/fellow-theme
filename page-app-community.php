@@ -1,31 +1,40 @@
-<?php
+<?php 
+
 get_header(null, array('in_app' => true));
-    if (have_posts()):
-        while (have_posts()):
-            the_post(); ?>
-            <h3><?php the_title(); ?></h3>
-            <?php the_content(); ?>
-            <?php wp_link_pages(); ?>
-            <?php edit_post_link(); ?>
 
-        <?php endwhile; ?>
+get_template_part('parts/app-side-nav', null, array('highlighted' => 'community'));
 
-        <?php
-        if (get_next_posts_link()) {
-            next_posts_link();
-        }
-        ?>
-        <?php
-        if (get_previous_posts_link()) {
-            previous_posts_link();
-        }
-        ?>
+if (have_posts()):
+    while (have_posts()):
+        the_post(); ?>
+        <h3><?php the_title(); ?></h3>
+        <?php the_content(); ?>
+        <?php wp_link_pages(); ?>
+        <?php edit_post_link(); ?>
 
-    <?php else: ?>
+    <?php endwhile; ?>
 
-        <p>No posts found. :(</p>
+    <?php
+    if (get_next_posts_link()) {
+        next_posts_link();
+    }
+    ?>
+    <?php
+    if (get_previous_posts_link()) {
+        previous_posts_link();
+    }
+    ?>
 
-    <?php endif; 
+<?php else: ?>
+
+    <p>No posts found. :(</p>
+
+<?php endif;
+
+?>
+
+<?php
+
+get_template_part('parts/app-side-nav-end');
 
 get_footer();
-    

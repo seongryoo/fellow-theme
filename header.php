@@ -32,6 +32,3 @@
         </a>
     </nav>
 
-    <?php get_template_part('parts/app-side-nav', null, array('highlighted' => 'home')); ?>
-
-    <main id="main-content">

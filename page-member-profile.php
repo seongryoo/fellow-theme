@@ -17,8 +17,10 @@ if ($member_obj != false) {
     
 get_header(null, array('in_app' => true, 'title_override' => $title_override));
 
+get_template_part('parts/app-side-nav', null, array('highlighted' => 'community'));
 
 ?>
+
 
 <?php if ($member_obj == false): ?>
     <h1>Looks like this member (<?php echo $member_slug ?>) doesn't exist. :(</h1>
@@ -27,5 +29,7 @@ get_header(null, array('in_app' => true, 'title_override' => $title_override));
     <h1>Member: <?php echo $member_obj->display_name ?></h1>
 
 <?php endif; 
+
+get_template_part('parts/app-side-nav-end');
 
 get_footer();
