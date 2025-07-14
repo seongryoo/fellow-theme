@@ -1,5 +1,5 @@
 <?php
-get_header();
+get_header(null, array('in_app' => true));
     if (have_posts()):
         while (have_posts()):
             the_post(); ?>
