@@ -4,22 +4,78 @@ Theme Name: Fellow App
 
 body {
     background: aliceblue;
+
+    font-family: 'RussischSansRegular';
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: black;
+    text-decoration: none;
 }
 
 ul,
-ol {
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+body {
     padding: 0;
+    margin: 0;
+}
+
+.app-banner,
+.sidebar-and-main {
 }
 
 .sidebar-and-main {
     display: flex;
+    border: 1px solid orange;
+}
+
+.sidenav-container {
+    width: 10rem;
+    position: fixed;
+    margin-top: 3rem;
+}
+
+main {
+    margin-left: 10rem;
+    padding-top: 3rem;
 }
 
 .sidenav-container__list {
     display: flex;
     flex-direction: column;
+    border: 1px solid green;
 }
 
 .sidenav-container__list__item--current-item {
     background: red;
+}
+
+.app-container {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.app-banner {
+    border: 1px solid green;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 3rem;
+    position: fixed;
+    margin: 0 auto;
+    max-width: 48rem;
+    background: white;
+}
+
+.hidden-link {
+    position: fixed;
 }

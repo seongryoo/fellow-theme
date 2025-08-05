@@ -19,6 +19,7 @@
         ?>
     </title>
 
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/russisch-sans" type="text/css"/> 
     <link rel="stylesheet" href="<?php echo esc_url(get_stylesheet_uri()); ?>" type="text/css" />
     <?php wp_head(); ?>
 </head>
@@ -31,4 +32,3 @@
             Skip to main content
         </a>
     </nav>
-

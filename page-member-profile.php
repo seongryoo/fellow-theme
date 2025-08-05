@@ -14,22 +14,31 @@ if ($member_obj != false) {
     $title_override = $member_obj->display_name;
 
 }
-    
+
 get_header(null, array('in_app' => true, 'title_override' => $title_override));
 
-get_template_part('parts/app-side-nav', null, array('highlighted' => 'community'));
-
 ?>
+<div class="app-container">
+    <?php
 
+    get_template_part('parts/app-banner', null);
 
-<?php if ($member_obj == false): ?>
-    <h1>Looks like this member (<?php echo $member_slug ?>) doesn't exist. :(</h1>
+    get_template_part('parts/app-side-nav', null, array('highlighted' => 'community'));
 
-<?php else: ?>
-    <h1>Member: <?php echo $member_obj->display_name ?></h1>
+    ?>
+    <?php if ($member_obj == false): ?>
+        <h1>Looks like this member (<?php echo $member_slug ?>) doesn't exist. :(</h1>
 
-<?php endif; 
+    <?php else: ?>
+        <h1>Member: <?php echo $member_obj->display_name ?></h1>
 
-get_template_part('parts/app-side-nav-end');
+    <?php endif;
+
+    get_template_part('parts/app-side-nav-end');
+    ?>
+
+</div>
+<?php
+
 
 get_footer();
