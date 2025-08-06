@@ -18,9 +18,12 @@
         }
         ?>
     </title>
-
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/russisch-sans" type="text/css"/> 
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/piazzolla" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/metropolis" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/crimson" type="text/css" />
     <link rel="stylesheet" href="<?php echo esc_url(get_stylesheet_uri()); ?>" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/en/face/railway-sans" type="text/css" />
+
     <?php wp_head(); ?>
 </head>
 

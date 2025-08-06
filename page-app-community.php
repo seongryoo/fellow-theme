@@ -4,6 +4,8 @@ get_header(null, array('in_app' => true));
 
 ?>
 
+<div class="app-bg"></div>
+
 <div class="app-container">
     <?php
 

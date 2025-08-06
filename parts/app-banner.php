@@ -11,6 +11,14 @@
         </div>
 
         <?php
+    } else {
+        ?>
+
+        <div class="app-banner__right">
+            <a href="">Login</a>
+            
+        </div>
+        <?php
     }
     ?>
 </div>
