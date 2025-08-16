@@ -90,7 +90,7 @@ body {
 }
 
 .sidenav-container__list__item {
-    border-radius: 0.5rem;
+    border-radius: 0.75rem 0.1rem 0.75rem 0.1rem;
     display: flex;
     align-items: center;
     padding: 0.5rem;
@@ -99,7 +99,8 @@ body {
 
 .sidenav-container__list__item:hover,
 .sidenav-container__list__item:focus {
-    background: lightgray;
+    border-radius: 0.75rem;
+    background: rgba(214, 214, 214, 0.633)
 }
 
 .sidenav-container__list__item__icon {
@@ -115,7 +116,7 @@ body {
 }
 
 .sidenav-container__list__item--current-item {
-    background: gray;
+    background: #bce4b2;
 }
 
 .sidebar-and-main {
